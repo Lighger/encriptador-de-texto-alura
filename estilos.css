@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: system-ui, 'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(198, 174, 255);
+}
+
+.a {
+    display: inline-block;
+    position: relative;
+   
+}
+h1{
+    display: inline-block;
+    font-size: 3em;
+    margin: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 2px #fdf141;
+    font-family:  Courier, monospace;
+    color:rgb(1, 2, 78)
+}
+
+main{
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ............................... */
+
+.caja1{
+    display: inline-block;
+    width: 550px;
+    height: 450px;
+    /* margin-left: 30px; */
+}
+
+.txta{
+    font-size: 30px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+
+.slm{
+    margin-top: 18px;
+    font-size: 22px;
+    font-style: italic;
+
+}
+.slm::before{
+    content: url(dibujos/bi_exclamation-circle-fill.png);
+    margin-right: 5px;
+    
+}
+
+.areaT, .areaB{
+    margin-left: 20px;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    border-radius: 2vh;
+    font: inherit;
+    font-weight: bolder;
+    background-color: #9941fd;
+    color: #f3e522;
+    border-color:  rgb(170, 161, 29);
+    
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    background-color: #f3e522;
+    color: #320358;
+    transition: 0.3s;
+    
+}
+
+/* ................................. */
+
+.caja2{
+    width: 400px;
+    height: 450px;
+    background-color: #d9ccff;
+    display: inline-block;
+    border-radius: 1em;
+    color: rgb(0, 0, 50);
+
+}
+
+.seccion{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.munieco{
+    margin: 20px auto;
+    width: 350px;
+    height: 300px;
+
+}
+.munieco2{
+    text-align: center;
+    margin: 60px auto;
+    width: 350px;
+    height: 300px;
+    display: none;
+
+}
+.munieco3{
+    text-align: center;
+    margin: 60px auto;
+    width: 350px;
+    height: 300px;
+    display: none;
+}
+
+.imagen{
+    display: block;
+    width: 100%;    
+}
+
+.seccion2 {
+    margin-top: 20px;
+    text-align: center;
+    display: none;   
+}
+
+#copiarBtn{
+    margin-top: 2px;
+}
+
+@media screen and (max-width:840px){
+    *{
+        margin: 0;
+        
+    }
+    header{
+        text-align: center;
+    }
+    body{
+       width: auto;
+    }
+
+    main{
+        display: block;
+        width: auto;
+    }
+    .caja1{
+        display: inline;
+        text-align: center;
+        position: relative;
+        width: auto;
+        margin: 30px 30px 0px 20px;
+            
+    }
+
+    .munieco{
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .munieco2, .munieco3{
+        display: none;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .caja2{
+        display: block;
+        text-align: center;
+        position: relative;
+        width: auto;
+        height: 7em;
+        margin: 0px 20px 30px 30px;
+
+    }
+
+    .txta{
+        padding: 20px;
+        display: block;
+        width: 100%;
+        text-align: left;
+      
+    }
+   
+    .imagen, .imagen2, .imagen3{
+        display: none;
+    }
+
+}
